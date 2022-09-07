@@ -12,7 +12,7 @@ variable "ca_crt" {
 
 variable "cluster_issuer" {
   description = "The name of the ClusterIssuer to be created."
-  default = "cert-issuer"
+  default     = "cert-issuer"
 }
 
 variable "node_selector" {

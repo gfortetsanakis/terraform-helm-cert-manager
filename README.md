@@ -13,8 +13,8 @@ The cert-manager service can be used for automatically issuing certificates for 
 | Parameter          | Type     | Description                                                                                   |
 | ------------------ | -------- | --------------------------------------------------------------------------------------------- |
 | namespace          | Required | The kubernetes namespace at which the cert-manager chart will be deployed                     |
-| ca_key             | Required | The path to the file containing the private key of the ClusterIssuer certificate authority    |
-| ca_crt             | Required | The path to the file containing the certificate of the ClusterIssuer certificate authority    |
+| ca_key             | Required | The private key of the ClusterIssuer certificate authority                                    |
+| ca_crt             | Required | The certificate of the ClusterIssuer certificate authority                                    |
 | certificate_issuer | Optional | The name of the ClusterIssuer to be created                                                   |
 | node_selector      | Optional | A map variable with nodeSelector labels applied when placing pods of the chart on the cluster |
 

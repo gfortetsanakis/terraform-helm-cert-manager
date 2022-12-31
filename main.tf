@@ -5,8 +5,8 @@ resource "kubernetes_secret" "ca-key-pair" {
   }
 
   data = {
-    "tls.crt" = file("${var.ca_crt}")
-    "tls.key" = file("${var.ca_key}")
+    "tls.crt" = "${var.ca_crt}"
+    "tls.key" = "${var.ca_key}"
   }
 
   type = "kubernetes.io/tls"

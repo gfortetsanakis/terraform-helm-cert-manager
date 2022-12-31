@@ -3,11 +3,11 @@ variable "namespace" {
 }
 
 variable "ca_key" {
-  description = "The path to the file containing the private key of the ClusterIssuer certificate authority."
+  description = "The private key of the ClusterIssuer certificate authority."
 }
 
 variable "ca_crt" {
-  description = "The path to the file containing the certificate of the ClusterIssuer certificate authority."
+  description = "The certificate of the ClusterIssuer certificate authority."
 }
 
 variable "cluster_issuer" {
